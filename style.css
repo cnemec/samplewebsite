@@ -1,0 +1,111 @@
+
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+html{
+font-size: 1em;
+line-height: 1.125em;
+
+background-color:#202020;
+width: 100%;
+padding-left:1em;
+padding-right:1em;
+}
+
+h1{
+  color:#6666cc;
+  font-size: 2em;
+  line-height: 2.25em;
+  font-family: "Arial Black", Gadget, sans-serif;
+  text-align: center;
+  padding-top: 1.125em;
+}
+
+p{
+  color:#e4e4e4;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  line-height: 1.125em;
+  padding-top: 1.125em;
+  text-align:center;
+}
+
+p span::before{
+  content: "\A";
+  white-space: pre;
+}
+
+h3{
+  text-align:center;
+  padding-top: .875em;
+  color:#9999aa;
+  font-size: 1.375em;
+  line-height: 1.375em;
+  font-family:helvetica;
+}
+footer{
+  padding-top: 1.125em;
+  /*padding-left:1em;
+  */
+  clear:both;
+}
+img{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+  max-width:30%;
+
+}
+.searchrow{
+  overflow: hidden;
+  background-color: #101010;
+}
+.searchrow button{
+  padding:.5em;
+  padding-left: 1.15em;
+  padding-right: 1.15em;
+  float: left;
+  background-color: #6a006a;
+  border: none;
+  color: #bbbbbb;
+  font-size: 1.15em;
+}
+.searchrow button:hover{
+  background-color: #8a008a;
+  cursor: pointer;
+}
+.searchrow input[type=text]{
+  float:right;
+  padding: .5em;
+  border: none;
+  font-size: 1.15em;
+  background-color: #1a1a1a;
+  color:#bbbbbb
+}
+@media screen and (max-width: 600px){
+  .searchrow button, .searchrow input[type=text]{
+    width:100%;
+    padding-top: .25em;
+    padding-bottom: .25em;
+    float:none;
+    display:block;
+  }
+
+}
+/*
+@media screen and (min-width: 600px){
+
+  img{
+    max-width: 30%;
+    max-height: 30%;
+  }
+}
+@media screen and (min-width: 1000px){
+
+  img{
+    max-width: 40%;
+    max-height: 40%;
+  }
+}
+*/
